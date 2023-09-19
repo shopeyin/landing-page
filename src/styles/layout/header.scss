@@ -1,0 +1,159 @@
+.header{
+    position: relative;
+    border:1px solid blue;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.header__navigation{
+    border:1px solid purple;
+    margin-left: 7.2rem;
+    margin-right: 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 7.2rem;
+    align-items: center;
+
+    @include media('<=phone') {
+       margin: 0;
+    }
+   
+}
+.navigation-item.left{
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid green;
+    align-items: center;
+}
+.hamburger-menu{
+    width:2.7rem;
+    height: 0.1rem;
+    cursor: pointer;
+    position: relative;
+    background-color: red;
+}
+.hamburger-menu::before,
+.hamburger-menu::after{
+    content: '';
+    width:2.7rem;
+    height: 0.1rem;
+    cursor: pointer;
+    position: absolute;
+    background-color: red;
+}
+.hamburger-menu::before{
+    top: -3px;
+}
+.hamburger-menu::after{
+    top: 3px;
+}
+.navigation_logo{
+    width: 12rem;
+    height: 1.9rem;
+    position: relative;
+ 
+    &-image{
+        @extend %cover;
+        object-fit: cover; 
+    }
+
+}
+
+.navigation-item.right{
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-bag{
+    color:#FCFDFD;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+}
+.header-nametag{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 5rem;
+    background:  #384353;
+
+    & p{
+        color:  #FCFDFD;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.1rem;
+    }
+}
+.header__description{
+   
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__description-content{
+   
+    max-width: 74.5rem;
+    min-height: 25.5rem;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header__description-content-text-box{
+    color: #fff;
+    text-align: center;
+    font-size: 9.6rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.48rem;
+}
+.header__description-furnitureText{
+    font-style: italic;
+    font-weight: 400;
+   
+
+
+}
+.header__description-button{
+    display: flex;
+    padding: 0.8rem 3.6rem;
+    align-items: center;
+    gap: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    background:  #F8F4E7;
+    margin-top: 4.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:  #323334;
+}
+
+// video {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     z-index: -1;
+//   }
+.header__video-bg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
