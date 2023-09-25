@@ -1,6 +1,6 @@
 .header{
     position: relative;
-    border:1px solid blue;
+    background-color:1px solid blue;
     min-height: 100vh;
     min-height: 100dvh;
     display: flex;
@@ -10,11 +10,9 @@
 }
 .header__navigation{
     border:1px solid purple;
-    margin-left: 7.2rem;
-    margin-right: 7.2rem;
     display: flex;
     justify-content: space-between;
-    padding: 1.6rem 7.2rem;
+    padding: 1.6rem 7rem;
     align-items: center;
 
     @include media('<=phone') {
@@ -70,7 +68,7 @@
     align-items: center;
 }
 .header-bag{
-    color:#FCFDFD;
+    color: $color-porcelain;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -83,12 +81,11 @@
     height: 2.5rem;
     justify-content: center;
     align-items: center;
-   
     border-radius: 5rem;
-    background:  #384353;
+    background:  $color-oxford-blue;
 
     & p{
-        color:  #FCFDFD;
+        color:  $color-porcelain;
         text-align: center;
         font-size: 1.2rem;
         font-style: normal;
@@ -114,7 +111,7 @@
 
 }
 .header__description-content-text-box{
-    color: #fff;
+    color: $color-white;
     text-align: center;
     font-size: 9.6rem;
     font-style: normal;
@@ -135,19 +132,13 @@
     gap: 0.8rem;
     text-transform: uppercase;
     border-radius: 0.8rem;
-    background:  #F8F4E7;
+    background:  $color-quarter-spanish-white;
     margin-top: 4.8rem;
     font-size: 1.2rem;
     font-weight: 400;
-    color:  #323334;
+    color:  $color-shark;
 }
 
-// video {
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     z-index: -1;
-//   }
 .header__video-bg{
     position: absolute;
     top:50%;
